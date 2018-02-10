@@ -1,0 +1,225 @@
+/* all */
+*{
+  margin:0;
+  
+}
+body {
+  background-color: #dedede;
+}
+/* header */
+
+body>header {
+  background-color: #333333;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
+body>header h1 {
+  color: white;
+  line-height: 80px;
+  padding-left: 20px;
+}
+body>header nav,body>header nav ul,body>header h1 {
+  display: inline-block;
+}
+body>header nav ul {
+  /*box-sizing: border-box;*/
+  width: 140%;
+  margin-left: 180%;
+  
+}
+body>header nav ul li {
+  display:inline-block;
+  margin-left: 5px;
+}
+body>header nav ul li a {
+  display: inline-block;
+  width: 100%;
+  line-height: 2;
+  border-radius: 3px;
+  font-weight: 700;
+}
+body>header nav ul li a:link,body>header nav ul li a:visited {
+  color: #f0f0f0;
+  text-decoration: none;  
+}
+body>header nav ul li a:hover {
+  color: #333333;
+  background-color: #f0f0f0;
+}
+body>header nav ul li a:active {
+  color: #333333;
+  background-color: #f0f0f0;
+  text-decoration: underline;
+}
+
+/* main */
+main{
+  position: relative;
+  padding-top: 80px;
+  z-index: -1;
+  
+}
+main article header h3,main article header span {
+  color: gray;
+  font-size: 1em;
+}
+/* 在每个article的右 下 盒子阴影 */
+main article {
+  width: 96%;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 40px 15px;
+}
+main article p:nth-of-type(1) {
+  text-indent: 2em;
+}
+main article  h2 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+main article  h3 {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+main article p {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+main article ul {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+main article figure {
+  -webkit-margin-before: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+main article ol {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+main article ol li {
+  padding-bottom: 0.6em;
+}
+main article table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid silver;
+}
+main table caption {
+  font-family: 'Rock Salt', cursive;
+  padding: 15px;
+  font-style: italic;
+  caption-side: bottom;
+  color: #666;
+  text-align: right;
+  letter-spacing: 1px;
+}
+main thead th:nth-child(1) {
+  width: 40%;
+}
+main thead th:nth-child(2) {
+  width: 30%;
+}
+main thead th:nth-child(3) {
+  width: 30%;
+}
+main thead {
+  background-color: #333333;
+}
+main table th,main table td {
+  padding-left: 15px;
+}
+main thead th {
+  color: white;
+  letter-spacing: 2px;
+  text-align: left;
+  text-shadow: 0.5px 0.6px 0.3px black;
+}
+main table td {
+  letter-spacing: 1px;
+}
+main tfoot {
+  background-color: #cccccc;
+}
+
+/* aside */
+aside {
+  width: 90%;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 40px 15px;
+}
+aside h2 {
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  border-left: 3px solid #cacaca;
+  padding-left: 10px;
+}
+aside h3 {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px; 
+}
+aside p {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+aside form .email label,aside form .select p span {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  padding-right:15px;
+  font-size: 0.9em;
+}
+aside form .select p:last-child  span{
+  vertical-align: top;
+}
+aside form .email p:nth-child(2),
+aside form .email p:nth-child(5) {
+  color: gray;
+  margin-left: 30%;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: 0.9em;
+}
+aside form button[type="submit"] {
+  background-color: rgba(51,85,208,0.85);
+  width:96%;
+  line-height:3;
+  border-radius: 10px; 
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* footer */
+footer {
+  background-color: #333333;
+  width: 100%;
+  height: 70px;
+  color: white; 
+  text-align: center;
+}
+footer p {
+  line-height: 70px;
+}
