@@ -22,10 +22,14 @@ body>header h1 {
 body>header nav,body>header nav ul,body>header h1 {
   display: inline-block;
 }
+body>header nav {
+  unicode-bidi: normal;
+}
 body>header nav ul {
-  /*box-sizing: border-box;*/
-  width: 140%;
-  margin-left: 180%;
+  width: 100%;
+  margin-left: 70%;
+  margin-top: 0px;
+  padding: 0;
   
 }
 body>header nav ul li {
@@ -82,6 +86,7 @@ main article  h3 {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
 main article p {
   margin-top: 1em;
   margin-bottom: 1em;
