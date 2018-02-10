@@ -75,41 +75,31 @@ main article p:nth-of-type(1) {
   text-indent: 2em;
 }
 main article  h2 {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0.83em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  margin-top: 0em;
+  margin-bottom: 0.83em;
 }
 main article  h3 {
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 main article p {
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 main article ul {
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  padding-left: 40px;
 }
 main article figure {
-  -webkit-margin-before: 1em;
-  -webkit-margin-start: 40px;
-  -webkit-margin-end: 40px;
+  margin-top: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 main article ol {
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
 }
 main article ol li {
   padding-bottom: 0.6em;
@@ -165,24 +155,18 @@ aside {
   padding: 40px 15px;
 }
 aside h2 {
-  -webkit-margin-before: 0.83em;
-  -webkit-margin-after: 0.83em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
   border-left: 3px solid #cacaca;
   padding-left: 10px;
 }
 aside h3 {
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px; 
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 aside p {
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 aside form .email label,aside form .select p span {
   display: inline-block;
