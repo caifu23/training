@@ -11,7 +11,7 @@ FCC IFE MDN练习
 </ul>
 <h2>一、小薇学院</h2>
 <ol>
-  <li>作业一：<a href="https://caifu23.github.io/training/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML/index.html#luhan">零基础HTML编码</a>（比作业二少css）</li>
-  <li>作业二：<a href="https://caifu23.github.io/training/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML/index.html#luhan">零基础HTML编码+CSS</a></li>
+  <li>作业一：<a href="https://caifu23.github.io/training/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML/index.html#luhan">零基础HTML编码</a>&nbsp;&nbsp;<a href="https://github.com/caifu23/training/tree/master/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML" target="_blank">code</a>（比作业二少css）</li>
+  <li>作业二：<a href="https://caifu23.github.io/training/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML/index.html#luhan">零基础HTML编码+CSS</a>&nbsp;&nbsp;<a href="https://github.com/caifu23/training/tree/master/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML" target="_blank">code</a></li>
   <li>作业三：<a href="#">。。。</a></li>
 </ol>
