@@ -13,5 +13,5 @@ FCC IFE MDN练习
 <ol>
   <li>作业一：<a href="https://caifu23.github.io/training/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML/index.html#luhan">零基础HTML编码</a>&nbsp;&nbsp;&nbsp;&nbsp;代码：<a href="https://github.com/caifu23/training/tree/master/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML" target="_blank">code</a>（比作业二少css）</li>
   <li>作业二：<a href="https://caifu23.github.io/training/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML/index.html#luhan">零基础HTML编码+CSS</a>&nbsp;&nbsp;&nbsp;&nbsp;代码：<a href="https://github.com/caifu23/training/tree/master/IFE/xw01_%E9%9B%B6%E5%9F%BA%E7%A1%80HTML" target="_blank">code</a></li>
-  <li>作业三：<a href="#">。。。</a></li>
+  <li>作业三：<a href="https://caifu23.github.io/training/IFE/xw03_%E4%B8%89%E6%A0%8F%E5%BC%8F%E5%B8%83%E5%B1%80/index.html">三栏式布局</a>&nbsp;&nbsp;&nbsp;&nbsp;代码：<a href="https://github.com/caifu23/training/tree/master/IFE/xw03_%E4%B8%89%E6%A0%8F%E5%BC%8F%E5%B8%83%E5%B1%80">code</a></li>
 </ol>
