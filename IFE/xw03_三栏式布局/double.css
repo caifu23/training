@@ -1,0 +1,64 @@
+/* 双飞翼布局*/
+body {
+    font-size: 16px;
+    font-family: "Microsoft Yahei",Arial,sans-serif;
+    color: #000;
+}
+.container {
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #eee;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #999;
+}
+.middle {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.middle-inner {
+    margin: 0 140px 0 220px; /* 留出距离 */
+    background-color: white;
+    border: 1px solid #999;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.middle-inner p:nth-of-type(3),
+.middle-inner p:nth-of-type(4) {
+    text-indent: 2em;
+}
+.left {
+    float: left;
+    width: 200px;
+    margin-left: -100%;
+    padding: 20px;
+    background-color: #ffe6b8;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+.left img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 14px;
+}
+.right {
+    float: left;
+    width: 120px;
+    margin-left: -120px;
+    padding: 20px;
+    background-color: #a0b3d6;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+.right img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.right img:last-child {
+    margin-bottom: 0;
+}
