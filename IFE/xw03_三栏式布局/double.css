@@ -42,8 +42,10 @@ body {
 .left img {
     width: 80px;
     height: 80px;
-    float: left;
-    margin-right: 14px;
+    margin-right: 8px;
+}
+.left span {
+    vertical-align: top;
 }
 .right {
     float: left;
