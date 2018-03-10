@@ -1,0 +1,49 @@
+/* 小薇任务四：定位和居中 */
+/* 宽已知 高动态变化 的 水平垂直居中 */
+/* 
+    法一：
+        1. position 父相子绝 (子元素绝对定位，依据position值不是static的包含块)
+        2. left: 50%; (该50%是相对父元素的width)，margin-left: -200px; (用margin-left的 元素width一半的负值 将元素拉到居中)
+        3. 垂直居中 高度随内容动态变化, 所以 在Y轴方向上移自身高度的一半，即 transform: translateY(-50%);
+ */
+.container {
+    width: 100%;
+    height: 550px;
+    
+    border: 1px solid gray;
+    
+    position: relative;    
+}
+.main {
+    width: 400px;
+    
+    background-color: #ccc;
+    
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    transform: translateY(-50%); /* CSS3中 */
+  
+}
+.main #left , .main #right {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    
+    position: absolute;    
+}
+
+.main #left {
+    left: 0;
+    top: 0;
+    border-radius: 0 0 50px 0;
+}
+.main #right {
+    right: 0;
+    bottom: 0;
+    border-radius: 50px 0 0 0;
+}
+.main p {
+    margin: 50px;
+}
