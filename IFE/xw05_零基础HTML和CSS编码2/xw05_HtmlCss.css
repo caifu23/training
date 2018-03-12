@@ -1,0 +1,208 @@
+/* 小薇任务五：零基础HTML和CSS编码 二 */
+/*  */
+/* 
+   考虑哪些需要 box-sizing: border-box;
+   
+    1、头部和底部的宽度始终是100%宽
+    
+    2、页面右侧宽度为固定宽度（侧边栏），页面左侧根据浏览器宽度变化而自适应
+        2.1 左侧 宽度100%; 内部在用margin值间隔;
+            padding-right: 右侧侧边栏width与间隔之和;(即是，给右侧占位)
+            左侧内部 float: left;
+            由于左侧内部内容的浮动，导致高度失去，所以需要overflow: hidden;
+        
+        2.2 右侧 侧边栏固定宽度，然后 再用margin-left: -(自身宽度); position: relative; right: -(自身宽度+间距); float: left; 
+            实现与左侧一起并列
+            
+    3、10张图片完整展现，可从一行变成多行，随页面宽度的变化
+ */
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    line-height: 1.5;
+    background-color: #dedede;
+    margin: 0;
+    min-width: 800px;
+}
+
+body > header {
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+    background-color: #333333;
+    overflow: hidden;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+           box-sizing: border-box;
+    
+}
+body > header h1 {
+    font-size: 1.5em;
+    line-height: 50px;
+    color: white;
+    margin: 0;
+    
+    float: left;
+}
+nav {
+    /*padding: 2em;*/
+    text-align: center;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+nav li {
+    display: inline-block;
+    font-size: 1em;
+    color: white;
+    padding: .25em .5em;
+}
+nav li:last-child {
+    padding-right: 0;
+}
+
+nav li a {    
+    color: white;
+    text-decoration: none;
+    line-height: 50px;   
+}
+nav li:last-child a {
+    color: #94979c;
+}
+nav a:hover {
+    border-bottom: 3px solid #8bc34a;
+    /*background-color: #cdcdcd;
+    color: #333333;*/
+}
+
+main {    
+    width: 100%;
+    padding-right: 400px;
+
+    overflow: hidden;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+section {    
+    width: 100%;
+    /*margin: 20px;*/
+    
+    float: left;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+section article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #cdcdcd;
+    box-shadow: 2px 2px #848484;    
+}
+section article h2[id] + h3,
+section article h2[id] + span {
+    color: gray;
+}
+section article p {
+    text-indent: 2em;
+}
+main section article:nth-of-type(3) figure {
+    width: 80px;    
+    text-align: center;
+    border: 1px solid gray;  
+    
+    display: inline-block;
+    
+    -webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+    -webkit-margin-start: 10px;
+    -webkit-margin-end: 10px;
+}
+main section figure img {
+    width: 70px;
+    height: 90px;
+}
+main section figcaption {
+    font-size: .9em;
+}
+main section article:nth-of-type(2) ul {
+    list-style: none;
+}
+main section article:nth-of-type(4) table {
+    width: 100%;
+    table-layout: fixed;
+    
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+main article:nth-of-type(4) caption {
+    font-size: 1.25em;
+    margin: .25em 0 .5em;
+}
+main section article:nth-of-type(4) tr {    
+    border: 1px solid #ccc;    
+}
+main section article:nth-of-type(4) tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+table th ,
+table td {
+    padding: .5em;
+    text-align: left;
+}
+table th {
+    background-color: #333333;
+    color: #fff;
+    letter-spacing: .1em;
+}
+table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+aside {
+    background-color: white;
+    width: 380px;
+    padding: 20px;
+    margin-top: 20px;
+    
+    border: 1px solid #cdcdcd;
+    box-shadow: 2px 2px #848484;
+    
+    margin-left: -380px;
+    position: relative;
+    right: -380px;
+    float: left;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+aside h3 {
+    line-height: 2;
+    border-left: 3px solid #cdcdcd;
+    padding-left: 10px;
+}
+aside form .email label, 
+aside form .select span {    
+    width: 45%;
+    text-align: right;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #333333;
+    font-size: .9em;
+    color: white;
+    text-align: center;    
+    line-height: 50px;
+    
+    height: 50px;
+    width: 100%;    
+}
