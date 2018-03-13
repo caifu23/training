@@ -18,7 +18,8 @@ FCC IFE MDN练习
   <a href="https://caifu23.github.io/training/IFE/xw04_%E5%AE%9A%E4%BD%8D%E5%92%8C%E5%B1%85%E4%B8%AD%E9%97%AE%E9%A2%98/02_autoHeight.html">高度随内容动态变化</a>&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://caifu23.github.io/training/IFE/xw04_%E5%AE%9A%E4%BD%8D%E5%92%8C%E5%B1%85%E4%B8%AD%E9%97%AE%E9%A2%98/03_FixedHeight.html">固定高度,margin垂直水平居中</a>
   代码：<a href="https://github.com/caifu23/training/tree/master/IFE/xw04_%E5%AE%9A%E4%BD%8D%E5%92%8C%E5%B1%85%E4%B8%AD%E9%97%AE%E9%A2%98">code</a></li>
-  <li>作业五：
+  <li>作业五：<a href="https://caifu23.github.io/training/IFE/xw05_HTML%E5%92%8CCSS/xw05_HtmlCss.html">零基础HTML编码二</a>
+  代码： <a href="https://github.com/caifu23/training/blob/master/IFE/xw05_HTML%E5%92%8CCSS/xw05_HtmlCss.html">圣杯布局</a>
   
   </li>
 </ol>
