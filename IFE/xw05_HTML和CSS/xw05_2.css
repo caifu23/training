@@ -1,0 +1,215 @@
+/* 继承box-sizing */
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; 
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+       -moz-box-sizing: inherit;
+            box-sizing: inherit;     
+}
+
+body {
+    margin: 0;
+       
+    width: 100%;
+    min-width: 800px;
+    
+    font:normal 12px "Microsoft YaHei", san-serif;
+    line-height: 1.25;
+    
+    color: black;
+    background-color: #dedede;
+}
+
+header {
+    overflow: hidden;
+    
+    padding: 1.25em 3em;
+    
+    width: 100%;
+    height: auto;
+    
+    background-color: #333333;
+}
+header h1, header ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+header h1 {
+    float: left;
+    
+    color: white;
+}
+header ul {
+    float: right;
+}
+header li {
+    display: inline-block;
+    
+    padding: 5px 10px;
+}
+header li a {
+    border-bottom: 3px solid transparent;
+    
+    font-size: 1.25em;
+    font-weight: 700;
+    text-decoration: none;
+    
+    color: white;
+}
+header li:nth-of-type(4) a {
+    color: #94979c;
+}
+header li a:hover {
+    /* outline: 2px solid #8bc34a; */
+    border-bottom-color: #8bc34a;
+}
+
+main {
+  overflow: hidden;
+    
+  font-size: 1.25em;      
+}
+main section {
+    float: left;
+    
+    padding-right: 400px;   
+    width: 100%;
+}
+main article, main aside {
+    border: 1px solid #cdcdcd;
+    
+    box-shadow: 2px 2px #848484;
+}
+main article {        
+    margin: 20px;
+    padding: 1.25em;
+    
+    background-color: white;
+}
+main article h3,
+main article span {
+    color: gray;
+} 
+main article p {
+    text-indent: 2em;
+}
+main #luStory ul {
+    list-style: none;
+    
+    line-height: 1.5;
+}
+main article:nth-child(3) figure{
+    display: inline-block;
+    
+    border: 1px solid gray;
+    padding: .5em 1em;
+    
+    text-align: center;
+}
+main #luPic img {
+    width: 75px;
+    height: 95px;
+}
+main #luYan ol {
+    line-height: 1.5;
+}
+main #luYan table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+    width: 80%;
+    
+    line-height: 2;
+}
+main #luYan caption {
+    font-size: 1.2em;
+}
+main #luYan thead {
+    font-size: 1.05em;
+    
+    color: white;
+    background-color: #333333;
+}
+main #luYan tr {
+    border: 1px solid #cccccc;
+}
+main #luYan tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+main #luYan th,main #luYan td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    text-indent: 1em;
+}
+
+main aside {
+    float: left;
+    
+    position: relative;
+    
+    margin-top: 20px;
+    margin-left: -400px; 
+    padding: 1.25em;
+    width: 380px;
+    
+    background-color: white;
+}
+.input_group span {
+    display: inline-block;
+    
+    width: 37%;
+    
+    text-align: right;
+}
+.input_group input[type="password"][placeholder] {
+    margin-bottom: 1em;
+}
+.input_group p {
+    margin-left: 37%;
+    padding-left: .35em;
+    
+    font-size: .9em;
+    
+    color: rgba(0,0,0,0.7);
+}
+
+.select_group span {
+    display: inline-block;
+    
+    margin-bottom: .5em;
+    width: 37%;
+    
+    text-align: right;
+}
+.select_group textarea {
+    vertical-align: top;
+    color: gray;
+}
+aside button {
+    margin-top: 1em;
+    
+    border: 2px solid #c4cccf;
+    border-radius: 7px;
+    
+    width: 95%;
+    
+    line-height: 2;
+    
+    color: white;
+    background-color: #3355d0;
+}
+footer {
+    padding: .25em 0;
+    
+    width: 100%;
+    
+    font-size: 1.25em;
+    line-height: 1.5;
+    text-align: center;
+    
+    color: white;
+    background-color: #333333;
+}

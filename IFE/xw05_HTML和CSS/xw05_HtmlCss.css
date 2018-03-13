@@ -15,13 +15,17 @@
             实现与左侧一起并列
             
     3、10张图片完整展现，可从一行变成多行，随页面宽度的变化
+        3.1 figure 的 display:inline-block;
+        3.2 margin
+    
  */
 body {
     font-family: "Microsoft YaHei", sans-serif;
     line-height: 1.5;
     background-color: #dedede;
-    margin: 0;
     min-width: 800px;
+    margin: 0;
+    
 }
 
 body > header {
@@ -118,10 +122,7 @@ main section article:nth-of-type(3) figure {
     
     display: inline-block;
     
-    -webkit-margin-before: .5em;
-    -webkit-margin-after: .5em;
-    -webkit-margin-start: 10px;
-    -webkit-margin-end: 10px;
+    margin: .5em 10px .5em 10px;
 }
 main section figure img {
     width: 70px;
