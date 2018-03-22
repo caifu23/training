@@ -22,4 +22,6 @@ FCC IFE MDN练习
   代码： <a href="https://github.com/caifu23/training/blob/master/IFE/xw05_HTML%E5%92%8CCSS/xw05_HtmlCss.html">圣杯布局</a>
   
   </li>
+  <li>作业六：<a href="https://caifu23.github.io/training/IFE/xw_task06/index.html">通过HTML及CSS模拟报纸排版<a/>&nbsp;&nbsp;&nbsp;&nbsp;
+  代码：<a href="https://github.com/caifu23/training/tree/master/IFE/xw_task06" target="_blank">code</a></li>
 </ol>
