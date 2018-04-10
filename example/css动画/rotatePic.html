@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="viewport" content="width=device-width, initial-scale=1">
+	<title>3d</title>
+	<style type="text/css">
+		body {
+			perspective: 1000px;
+		}
+		section {
+			position: relative;
+
+			margin: 150px auto;
+			width: 200px;
+			height: 150px;
+
+			background: url(1.png) no-repeat center center;
+			background-size: cover;
+			
+			transform-style: preserve-3d;  /* 让父盒子里面的子盒子以3d效果显示 */
+			transition: all 6s linear;
+		}
+		section:hover {
+			transform: rotateY(360deg);  /* 悬浮在section时，旋转360度，在section里的子盒子div就会一起旋转 */
+		}
+		section div {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+
+			background: url(2.png) no-repeat center center;
+			background-size: cover;
+		}
+		section div:nth-child(1) {
+			top: 40px;
+			border: 1px solid blue;
+			transform: rotateY(-60deg) translate3d(0,0,250px);
+		}
+		section div:nth-child(2) {
+			top: 40px;
+			border: 1px solid blue;
+			transform: rotateY(0deg) translate3d(0,0,250px);
+		}
+		section div:nth-child(3) {
+			top: 40px;
+			border: 1px solid blue;
+			transform: rotateY(60deg) translate3d(0,0,250px);
+		}
+		section div:nth-child(4) {
+			top: 40px;
+			border: 1px solid blue;
+			transform: rotateY(120deg) translate3d(0,0,250px);
+		}
+		section div:nth-child(5) {
+			top: 40px;
+			border: 1px solid blue;
+			transform: rotateY(180deg) translate3d(0,0,250px);
+		}
+		section div:nth-child(6) {
+			top: 40px;
+			border: 1px solid blue;
+			transform: rotateY(240deg) translate3d(0,0,250px);
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<section>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>开门大吉</title>
+	<style type="text/css">
+		section {
+			margin: 100px auto;
+			border: 1px solid red;
+			width: 400px;
+			height: 300px;
+			background: url("dong.gif") no-repeat  center center;
+			perspective: 600px; /* 透视视点 */
+
+		}
+		section:hover .door{
+			transform: rotateY(-120deg);
+		}
+		section:hover .door2 {
+			transform: rotateY(120deg);
+		}
+		.door,
+		.door2 {
+			float: left;
+			position: relative;
+			width: 199px;
+			height: 300px;
+			background-color: pink;
+			transition: all 0.8s;   /*动画过渡*/
+			
+		}
+		.door {
+			border-right: 1px solid hotpink;
+			transform-origin: left;
+		}
+		.door2 {
+			border-left: 1px solid hotpink;
+			transform-origin: right; /* 变形原点*/
+		}
+		.door p{
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			right: 3px;
+			transform: translateY(-50%);
+			border-radius: 50%;
+			border: 2px solid rgba(0,0,0, .3);
+			width: 30px;
+			height: 30px;
+			background-color: red;
+		}
+		.door2::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 3px;
+			transform: translateY(-50%);
+			width: 30px;
+			height: 30px;
+			border: 2px solid rgba(0,0,0, .3);
+			border-radius: 50%;
+			background-color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<section>
+		<div class="door">
+			<p></p>
+		</div>
+		<div class="door2">
+		</div>
+	</section>
+</body>
+</html>

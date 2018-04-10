@@ -1,0 +1,224 @@
+/* 通用样式 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+/* 头部导航部分 start */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	padding: 10px 0;
+	width: 100%;
+	height: 70px;
+
+	background-color: rgba(0, 0, 0, .8);
+}
+header h1 {
+	font-family: "Microsoft YaHei";
+	font-size: 24px;
+	text-align: center;
+	line-height: 2;
+
+	color: #fff;
+}
+
+header li {
+	float: left;
+}
+header a {
+	display: block;
+
+	padding: 0 10px;
+	margin: 0 10px;
+	line-height: 20px;
+	text-decoration: none;
+
+	color: gray;
+	background-color: #eee;
+}
+header a:hover {
+	color: pink;
+}
+
+/* 头部导航部分 end */
+
+/* 主体部分 start */
+main {
+	margin-top: 100px;
+}
+
+
+/* 鼠标经过显示边框 start */
+main .pseudo {
+	padding: 5px;
+	background-color: pink;
+}
+.pseudo div {
+	display: block;
+	width: 200px;
+	height: 132px;
+	margin: 10px auto;
+	position: relative;  /*子绝父相*/
+}
+.pseudo div:hover::before {   /*鼠标经过div之后，前面插入一个伪元素*/
+	content: "";
+	width: 100%;
+	height: 100%;
+	border: 10px solid rgba(0,0,0, .4);
+	display: block;  /*伪元素属于行内元素 要转换 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;  /*把padding 和 border 都算入 width中 */
+	}
+
+
+/* 鼠标经过显示边框 end */
+
+/* 开门大吉部分 start */
+.door {
+	padding-left: 30px;
+	line-height: 50px;
+	background-color: #cff1c7;
+}
+
+/* 开门大吉部分 end */
+
+/* 翻转的图片 start */
+.rotate {
+	background-color: #f1e8c7;
+	padding-bottom: 30px;
+}
+.rotate p {
+	padding-left: 30px;
+}
+.rotate div {
+	position: relative;
+
+	margin: 10px auto;
+	width: 134px;
+	height: 100px;
+
+	border: 1px solid red;
+}
+.rotate div img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 3s;  /* 过渡效果 */
+}
+.rotate div:hover img {
+	transform: rotateY(180deg); /* 翻转绕Y轴 */
+}
+.rotate div img:first-child {
+	z-index: 1; /* 由于定位及后来居上，被第二张覆盖，所以z-index让它在上 */
+	backface-visibility: hidden;  /* 当它不是面向屏幕时，就隐藏 */
+}
+/* 翻转的图片 end */
+
+/* 奔跑的小车 start*/
+.car {
+	height: 120px;
+	background-color: #c6f1e7;
+}
+.car div {
+	width: 105px;
+	height: 80px;
+	border: 1px solid red;
+}
+.car div img {
+	animation: carGo 18s linear infinite; /* animation调用名为carGo的动画，linear 匀速，infinite 无限循环 */
+}
+.car div img:hover {
+	animation-play-state: paused;
+}
+@keyframes carGo {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(1200px);
+	}
+	51% {
+		transform: translateX(1200px) rotateY(180deg);
+	}
+	100% {
+		transform: translateX(0) rotateY(180deg);
+	}
+}
+
+/* 奔跑的小车 end*/
+
+/* 无缝滚动，轮播图  start */
+.carousel {
+	background-color: #cff1c7;
+}
+.carousel div {
+	overflow: hidden;  /* 隐藏溢出的ul里的图片 */
+	margin: 5px auto;
+	border: 1px solid gray;
+	width: 1200px;   /* 宽度刚好是6张图片的宽度 */
+}
+.carousel ul {
+	width: 200%;     /* 由于同一组图片放了2次，所以宽度为2倍，不然会浮动到下一行 */
+	height: 145px;
+	animation: carouselPic 10s linear infinite;  /* 引用动画名 carouselPic 用时10s  匀速 linear  无限 infinite */
+}
+@keyframes carouselPic {   /* 定义动画 */
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-1200px);
+	}
+}
+.carousel ul:hover {
+	animation-play-state: paused;  /* 当鼠标悬停在ul时，即任意图片上时，此刻停止动画 */
+}
+.carousel li {
+	float: left;
+}
+.carousel li img {
+	width: 200px;
+	height: 145px;
+}
+
+/* 无缝滚动，轮播图  end */
+/* 轮播图 垂直方向 */
+.Ycarousel img {
+		width: 200px;
+		height: 145px;
+	}
+.Ycarousel div{
+		overflow: hidden;
+		margin: 10px auto;
+		width: 200px;
+		height: 580px;
+
+		border: 1px solid red;
+	}
+.Ycarousel ul {
+		animation: moving 15s linear infinite;
+	}
+.Ycarousel ul:hover {
+		animation-play-state: paused;
+	}
+@keyframes moving {
+		0% {
+			transform: translateY(-580px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+/* 主体部分 end 

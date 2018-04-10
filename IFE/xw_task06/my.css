@@ -3,24 +3,27 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	background-color: rgb(93,93,93);
+}
 
-.clearfix:before, .clearfix:after {
+/*.clearfix:before, .clearfix:after {
 	content: "";
-	display: block;
+	display: table;
 }
 .clearfix:after {
 	clear: both;
 }
 .clearfix {
 	*zoom: 1;
-}
+}*/
 
 .container {
 	margin: 10px auto;
 	padding: 0 44px;
 	width: 892px;
 
-	background-color: #eee;
+	background-color: #ffffff;
 }
 
 header {

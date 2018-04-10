@@ -1,0 +1,740 @@
+/*全局样式*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #ffffff;
+	min-width: 1280px;
+}
+
+ul {
+	list-style: none;
+}
+
+.clearfix:before, .ckearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/*页面头部分*/
+header {
+	height: 56px;
+
+	background-color: #ffffff;
+}
+
+header .logo {
+	float: left;
+
+	margin-top: 13px;
+	margin-left: 60px;
+	width: 103px;
+	height: 31px;
+
+	/*background-color: hotpink;*/
+}
+.logo img {
+	vertical-align: bottom;
+	margin-right: 3px;
+}
+.logo span {
+	font: normal 20px "SimHei";
+	color: #393a3a;
+}
+
+header nav {
+	float: right;
+
+	margin-right: 65px;
+
+/*	background-color: #eee;*/
+}
+nav li {
+	float: left;
+
+	height: 52px;
+	line-height: 52px;
+}
+nav li a {
+	display: inline-block;
+
+	padding: 0 13px 0 20px;
+	height: 35px;
+
+	font: normal 14px "Microsoft YaHei";
+	text-decoration: none;
+
+	color: #787b83;
+}
+nav li a:hover {
+	border-bottom: 3px solid #e74f4d;
+
+	color: #e74f4d;
+}
+nav a img {
+	vertical-align: bottom;
+}
+.a_login {
+	color: #e74f4d;
+}
+/*header end */
+
+/* banner start */
+.banner {
+	margin: 0 auto;
+	width: 1280px;
+	height: 690px;
+
+	background: url("images/topbg_02.jpg") no-repeat 0 0;
+}
+
+/* 遮罩淡黑色 */
+.shade {
+	overflow: hidden;
+
+	height: 690px;
+
+	background-color: rgba(3,0,0,.2);
+}
+
+.ban_font {
+	margin-top: 230px;
+	margin-left: 115px;
+	width: 467px;
+	height: 132px;
+
+	color: #ffffff;
+	/*background-color: hotpink;*/
+}
+.ban_font p:first-child {
+	font: normal 60px "Microsoft YaHei";
+}
+.ban_font p:last-child {
+	font: normal 20px "Microsoft YaHei";
+}
+
+.ban_link {
+	margin-left: 125px;
+	margin-top: 65px;
+	width: 330px;
+	height: 63px;
+
+	background-color: #e74f4d;
+
+	/*transition: margin-top 0.5s;*/
+	transition: all 0.5s;
+}
+.ban_link:hover {
+	/*margin-top: 60px;*/
+	transform: translate(0, -5px); /*在Y轴上移5px   或写为: transform: translateY(-5px)*/
+
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+.ban_link a {
+	display: inline-block;
+
+	width: 330px;
+
+	font-family: "Microsoft YaHei";
+	font-size: 30px;
+	line-height: 63px;
+	text-decoration: none;
+	text-align: center;
+
+	color: #ffffff;
+}
+/* banner end */
+
+/* 标语 图片 */
+.idea_ban {
+	margin: 0 auto;
+	width: 1280px;
+	height: 250px;
+
+	/*background-color: hotpink;*/
+}
+.idea_ban li {
+	float: left;
+
+	width: 320px;
+	/*height: 200px;*/
+
+	/*background-color: #eee;*/
+}
+.idea_ban img {
+	margin: 44px 138px;
+
+	height: 40px;
+}
+.idea_ban p{
+	/*margin: 0 auto;*/
+	border-right: 2px solid #bbbbbb;
+	padding: 0 81px;
+	width: 165px;
+	height: 50px;
+
+	font-size: 14px;
+	text-align: center;
+	color: #767777;
+}
+.idea_ban li:last-child  p{
+	border-right: 0;
+}
+
+/* 主体部分 */
+main {
+	margin: 0 auto;
+	width: 1280px;
+	/*height: 1304px;*/
+
+	/*background-color: #87cf4db5;*/
+}
+
+/* 第一部分 */
+section:first-child {
+	height: 1304px;
+
+	/*background-color: #b4f580;*/
+}
+.new_top {
+	height: 359px;
+
+	text-align: center;
+
+	background-color: #edecec;
+}
+.new_top img {
+	margin-top: 88px;
+	margin-bottom: 46px;
+}
+.new_top h1 {
+	font: normal 53px "SimHei";
+
+	color: #a1a1a1;
+}
+
+.new_middle {
+	overflow: hidden;
+	height: 341px;
+
+	background: url("images/finer00.jpg") no-repeat 0 0;
+}
+.mid_font {
+	margin-top: 52px;
+	height: 67px;
+	
+	font-family: "Microsoft YaHei";
+	text-align: center;
+
+	color: #ffffff;
+	/*background-color: pink;*/
+}
+.mid_font h4 {
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 41px;
+}
+.mid_font p {
+	font-size: 12px;
+	line-height: 25px;
+}
+
+.mid_search {
+	margin: 50px auto;
+	width: 1029px;
+	height: 35px;
+
+	/*background-color: #eee;*/
+}
+.mid_search select {
+	box-sizing: border-box;
+
+	margin-right: 20px;
+	/* Chrome 和 Firefox 里面的边框是不一样的，所以复写 */
+	border: 1px solid #d9c9c2;
+	padding-left: 14px;
+	padding-right: 25px; /* 为下拉小箭头留出位置，避免被文字覆盖 */
+	width: 235px;
+	height: 35px;
+
+	font: normal 12px "Microsoft YaHei";
+	color: #a8aaaa;
+	/*下拉小箭头图标 在选择框的最右中间显示小箭头图片*/
+	background: url(images/red_03.jpg) no-repeat scroll 205px center white;
+	
+	/*清除默认的select选择框样式 下拉小箭头*/
+	appearance: none;
+	-moz-appearance: none;  /* Firefox */
+	-webkit-appearance: none;  /* Safari 和 Chrome */
+}
+ /* 清除IE的默认选择框样式，隐藏下拉箭头 */
+.mid_search select::-ms-expand {
+	display: none;
+}
+/* option样式的修改 */
+.mid_search option {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+
+}
+
+/* --背景色字体颜色--*/
+/*.mid_search option:checked{
+    color: red !important;
+    background-color:#1E90FF !important;
+}*/
+
+.mid_search input {
+	box-sizing: border-box;
+
+	border: 0;
+	padding-left: 14px;
+	width: 235px;
+	height: 35px;
+
+	font: normal 14px "Microsoft YaHei";
+	color: #ffffff;
+	background-color: #be4e48;
+}
+
+.new_bot {
+	/*overflow: hidden;*/
+	box-sizing: border-box;
+
+	padding: 100px 0 118px 140px;
+	height: 606px;
+
+	background-color: #f1f1f1;
+}
+.bot_pic {
+	width: 970px;
+	height: 388px;
+
+	/*background-color: pink;*/
+}
+.bot_pic figure {
+	float: left;
+
+	text-align: center;
+}
+.bot_pic figure:not(:last-child) {
+	margin-right: 30px;
+}
+.bot_pic figcaption {
+	font: normal 14px "SimHei";
+	line-height: 2.5;
+}
+figure .bot_one {
+	font-size: 20px;
+	letter-spacing: 1.25em;
+}
+.bot_pic p {
+	font: normal 11px "SimHei";
+	line-height: 1.5;
+	color: #848484;
+}
+.bot_pic img {
+
+	border: 1px solid #eee;
+	padding: 10px 6px;
+	width: 200px;
+	height: 312px;
+
+	background-color: #ffffff;
+}
+
+/* 第二部分 */
+main section:nth-child(2) {
+	height: 1088px;
+
+	background-color: #ffffff;
+}
+.life_top {
+	height: 566px;
+
+	/*background-color: hotpink;*/
+}
+.ltop_left {
+	float: left;
+
+	position: relative;
+
+	width: 851px;
+	height: 566px;
+
+	font-family: "Microsoft YaHei";
+	text-align: center;
+
+	color: #ffffff;
+	background: url("images/feet.png") no-repeat 0 0;
+	/*background-color: #8ba9ce;*/
+}
+.ltop_left h3 {
+	margin-top: 120px;
+
+	font-size: 49px;
+	line-height: 1;
+}
+.ltop_left h1 {
+	font-size: 157px;
+	font-weight: normal;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+.ltop_left p {
+	font-size: 22px;
+}
+.white_block {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -10px;
+
+	border: 20px solid transparent;
+	border-right: 20px solid #fff;
+	width: 0;
+	height: 0;
+}
+
+
+.ltop_right {
+	float: right;
+
+	padding: 140px 68px;
+	width: 290px;
+	height: 235px;
+
+	/*background-color: #bda9ce;*/
+}
+.ltop_right h3 {
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+.ltop_right h3 span {
+	color: red;
+}
+.ltop_right p {
+	margin-top: 30px;
+
+	font-size: 12px;
+	line-height: 2.5;
+
+	color: #9e9e9e;
+}
+.ltop_right > a {
+	display: block;
+
+	margin: 30px auto;
+	border: 1px solid #e25c60;
+	width: 105px;
+	height: 32px;
+
+	font-size: 12px;
+	line-height: 32px;
+	text-decoration: none;
+	text-align: center;
+
+	color: #e25c60;
+
+	transition: background-color 0.6s ease 0s,
+				color 0.6s ease 0s;
+}
+.ltop_right > a:hover {
+	color: #fff;
+	background-color: #e25c60;
+}
+.ltop_right_cir {
+
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 72px;
+	height: 32px;
+
+	/*background-color: #ccc;*/
+}
+.ltop_right_cir li {
+	float: left;
+
+	margin-top: 11px;
+	border: 1px solid #8d8d8d;
+	width: 10px;
+	height: 10px;
+
+	border-radius: 50%;
+
+	cursor: pointer;   /* 鼠标经过li的样式：小手 */
+}
+/*.ltop_right_cir li:first-child {
+	background-color: #8d8d8d;
+}*/
+.ltop_right_cir li.current {
+	background-color: #8d8d8d;
+}
+.ltop_right_cir li:not(:last-child) {
+	margin-right: 17px;
+}
+
+.life_bot {
+	height: 522px;
+
+	/*background-color: #b3b392;*/
+}
+.life_bot div, .life_bot img {
+	float: left;
+
+	width: 33.3%;
+	height: 522px;	
+}
+.life_bot div {
+	font-size: 18px;
+	text-align: center;
+}
+.life_bot div:first-child {
+	background-color: #e25c60;
+}
+.life_bot div:first-child p {
+	margin-top: 180px;
+	margin-bottom: 40px;
+
+	color: #ffffff;
+}
+.life_bot div:nth-child(2) p {
+	margin-top: 180px;
+	margin-bottom: 40px;
+
+	color: #373737;
+}
+.life_bot div a {
+	display: block;
+
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+}
+.life_bot div:nth-child(1) a {
+	border: 1px solid #ffffff;
+	
+	color: #ffffff;
+}
+.life_bot div:nth-child(2) a {
+	border: 1px solid #e25c60;
+	
+	color: #e25c60;
+}
+
+/* 侧边栏 申请信息 */
+aside {
+	padding: 120px 140px 135px;
+
+	background-color: #ffffff;
+}
+
+aside .form_head {
+	height: 160px;
+
+	text-align: center;
+
+	/*background-color: #a3c8f4;*/
+}
+.form_head h3 {
+	margin-bottom: 20px;
+
+	font-size: 21px;
+	font-family: "SimHei";
+	font-weight: normal;
+
+	color: #333333;
+}
+.form_head p {
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+
+	color: #b4b4b4;
+}
+
+.form_main {
+	height: 300px;
+
+	/*background-color: #dcf4c8;*/
+}
+.form_l {
+	float: left;
+	box-sizing: border-box;
+
+	padding-right: 30px;
+	width: 360px;
+
+	font-family: "SimSong";
+}
+.form_l h4 {
+	margin-bottom: 20px;
+
+	font-size: 14px;
+	font-weight: normal;
+
+	color: #656364;
+}
+.form_l p {
+	margin-bottom: 30px;
+	width: 280px;
+
+	font-size: 11px;
+
+	color: #c5c5c5;
+}
+
+
+.form_r {
+	float: left;
+
+	width: 640px;
+
+	/*background-color: #f3cfa3;*/
+}
+.form_r input[type=text] {
+	box-sizing: border-box;
+	border: 0;
+
+	margin-bottom: 15px;
+	margin-right: 15px;  /*15px*/
+	padding-left: 15px;
+	width: 310px;
+	height: 42px;
+
+	color: #959394;
+	background-color: #ededef;
+}
+.form_r input:nth-child(even) {
+	margin-right: 0;
+}
+
+.form_r textarea {
+	box-sizing: border-box;
+	border: 0;
+
+	margin-bottom: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	width: 640px;
+	height: 120px;
+
+	color: #7f7d7e;
+	background-color: #ededef;
+
+	resize: none;
+
+}
+.form_r input[type=submit] {
+	box-sizing: border-box;
+	border: 0;
+
+	width: 640px;
+	height: 42px;
+
+	color: #5b5b5d;
+	background-color: #ededef;	
+}
+
+
+/* 底部 联系信息 */
+footer {
+	height: 400px;
+
+	
+}
+
+.footer_mess {
+	padding-top: 80px;
+	padding-bottom: 70px;
+
+	text-align: center;
+
+	color: #ffffff;
+	background-color: #33363f;
+}
+.footer_mess h3 {
+	font-family: "SimHei";
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 1.5;
+}
+.footer_mess p {
+	font-family: "SimSong";
+	font-size: 12px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+.footer_form {
+	margin: 0 auto 35px;
+	width: 500px;
+	height: 42px;
+}
+.footer_form input {
+	box-sizing: border-box;
+	border: 0;
+
+	height: 42px;	
+}
+.footer_form input[type=email] {
+	float: left;
+	padding-left: 15px;
+	width: 420px;
+
+	color: #959394;
+	background-color: #ededef;
+}
+.footer_form input[type=submit] {
+	float: right;
+	width: 80px;
+
+	font-size: 15px;
+
+	color: #fafbff;
+	background-color: #707278;
+}
+.footer_mess ul {
+	margin: 0 auto;
+	width: 180px;
+	height: 25px;
+}
+.footer_mess li {
+	float: left;
+
+	margin-right: 20px;
+	width: 30px;
+	height: 25px;
+}
+.footer_mess li:last-child {
+	margin-right: 0;
+}
+
+footer > p {
+	box-sizing: border-box;
+
+	padding: 30px 40px 30px 95px;
+
+	font-family: "SimSong";
+	font-size: 12px;
+
+	color: #e1e0e5;
+	background-color: #30303a;
+}
+footer a {
+	float: right;
+
+	color: #e1e0e5;
+	text-decoration: none;
+}
