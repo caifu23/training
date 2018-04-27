@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>box 3D</title>
+	<style type="text/css">
+		/*
+			舞台(perspective)
+			容器(3D,preserve-3d)
+			内容
+		*/	
+		/*兼容性
+		transform:
+		-webkit-transform:
+		-moz-transform:
+		-ms-transform:
+		-o-transform:
+		ie8-
+		filter:fliph; 水平翻转相当于transform:rotateY(180deg)
+		filter:flipv; 垂直翻转相当于transform:rotateX(180deg)
+
+		animation: 及 @keyframes
+
+		-webkit-  低版本chrome   例: @-webkit-keyframes
+		-moz-     低版本firefox
+		ie9及以下不支持
+
+		box-sizing
+		-webkit-
+		-moz-
+
+		perspective
+		-webkit-
+		-moz-
+		-ms-
+		-o-
+
+		transform-style
+		-webkit-
+		-moz-
+		-ms-
+		-o-
+		*/
+
+		body {
+			perspective: 1000px; /*舞台*/
+			/*perspective-origin: 50% 300px;*/
+
+			margin: 0;
+
+			line-height: 200px;
+			text-align: center;
+		}
+		.box {
+			transform-style: preserve-3d;  /*容器*/
+			transform-origin: 50% 50% 100px; /*设置3d空间的原点在平面中心再向z轴移动宽度一半的位置  中心纵轴 */
+			transition: all 6s linear;
+
+			position: relative;
+
+			margin: 200px auto;
+			/*border: 1px solid red;*/
+			width: 200px;
+			height: 200px;
+		}
+		.box [class ^= 'card-'] {
+			box-sizing: border-box;
+
+			position: absolute;
+
+			border: 1px solid pink;
+			width: 200px;
+			height: 200px;
+		}
+		/*前*/
+		.box .card-1 {
+			transform: translateZ(200px);
+
+			z-index: 2;
+			background: url(1.jpg) no-repeat;
+		}
+		/*后*/
+		.box .card-2 {
+			z-index: 1;
+			background: url(2.jpg) no-repeat;		
+		}
+		/*左*/
+		.box .card-3 {
+			top: 0;
+			right: 200px;
+
+			transform: rotateY(90deg);
+			transform-origin: right;
+			background: url(3.jpg) no-repeat;
+		}
+		/*右*/
+		.box .card-4 {
+			top: 0;
+			left: 200px;
+
+			transform: rotateY(-90deg);
+			transform-origin: left;
+			background: url(4.jpg) no-repeat;
+		}
+		/*上*/
+		.box .card-5 {
+			bottom: 200px;
+			left: 0;
+
+			transform: rotateX(-90deg);
+			transform-origin: bottom;
+			background: url(5.jpg) no-repeat;
+		}
+		/*下*/
+		.box .card-6 {
+			top: 200px;
+			left: 0;
+			
+			transform: rotateX(90deg);
+			transform-origin: top;
+			background: url(6.jpg) no-repeat;
+		}
+
+		.box:hover {
+			/* 法一
+			transform: rotateY(720deg);
+			*/
+			/*法二*/
+			animation: rotateBox 6s linear infinite;
+		}
+		@keyframes rotateBox {
+			0% {
+
+			}
+			100% {
+				transform: rotateY(720deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="card-1">前</div>
+		<div class="card-2">后</div>
+		<div class="card-3">左</div>
+		<div class="card-4">右</div>
+		<div class="card-5">上</div>
+		<div class="card-6">下</div>
+	</div>
+</body>
+</html>
