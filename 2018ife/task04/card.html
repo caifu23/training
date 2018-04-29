@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>3D卡片</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+		}
+		.container {
+			position: relative;
+			overflow: hidden;
+
+			margin: 20px auto;
+			border: 1px solid yellowgreen;
+			width: 250px;
+			height: 350px;
+		}
+		.container [class ^= 'card-'] {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: pink;
+			
+			/*过渡效果*/
+			transition: all 0.5s linear;
+			/*视距原点，视点越远，看到的物体越小*/
+			perspective-origin: 1000px;
+		}
+		.container .card-1 {
+			z-index: 2;
+			background: url('正面.jpg') no-repeat;
+			/*当正面卡片远离视线（背对我们时），令其隐藏，从而可以看到卡2*/
+			backface-visibility: hidden;
+		}
+		.container .card-2 {
+			background: url('反面.jpg') no-repeat;
+		}
+
+	    /*在container上hover时，旋转卡片*/
+	    .container:hover [class ^= 'card-'] {
+	    	transform: rotateY(180deg);
+	    }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card-1"></div>
+		<div class="card-2"></div>
+	</div>
+</body>
+</html>
